@@ -9,8 +9,6 @@
 
 # Ignore Gradle Wrapper files (except for wrapper JAR)
 gradle-app.zip
-gradlew
-gradlew.bat
 
 # Ignore Maven local repository (if mistakenly added)
 .mvn/
