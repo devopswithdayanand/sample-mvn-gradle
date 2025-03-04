@@ -4,7 +4,7 @@ plugins {
 }
 
 repositories {
-    mavenCentral()  // Use mavenCentral() instead of mavenLocal() for public dependencies
+    mavenCentral()
 }
 
 dependencies {
@@ -19,7 +19,7 @@ description = 'mail'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 application {
-    mainClass = 'google.App'  // This is correct based on your App.java file
+    mainClass = 'google.App'
 }
 
 tasks.withType(JavaCompile) {
@@ -28,4 +28,12 @@ tasks.withType(JavaCompile) {
 
 tasks.withType(Javadoc) {
     options.encoding = 'UTF-8'
+}
+
+tasks.named('jar') {
+    manifest {
+        attributes(
+            'Main-Class': 'google.App'
+        )
+    }
 }
