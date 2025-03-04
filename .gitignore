@@ -4,55 +4,11 @@
 
 # Ignore dependency caches
 **/.gradle
-.gradle
-**/build/
+
 
 # Ignore Gradle Wrapper files (except for wrapper JAR)
 gradle-app.zip
 
 # Ignore Maven local repository (if mistakenly added)
 .mvn/
-.mvn/wrapper/maven-wrapper.jar
 
-# Ignore temporary files
-*.log
-*.tmp
-*.swp
-*.swo
-*.swn
-
-# Ignore IDE specific files (IntelliJ, Eclipse, VS Code)
-.idea/
-*.iml
-*.ipr
-*.iws
-.classpath
-.project
-.settings/
-.vscode/
-
-# Ignore OS-specific files
-.DS_Store
-Thumbs.db
-
-# Ignore test reports and logs
-/test-output/
-/surefire-reports/
-/failsafe-reports/
-
-/logs/
-/*.log
-
-# Ignore Java compiled classes
-*.class
-*.jar
-*.war
-*.ear
-
-# Ignore coverage reports
-/coverage/
-/jacoco.exec
-/jacoco-report/
-
-# Ignore generated documentation
-/site/
